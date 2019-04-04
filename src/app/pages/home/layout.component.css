@@ -1,0 +1,1815 @@
+.home-nav .list-item,
+.home-nav .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.home-nav .list-item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    height: 300px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative
+}
+
+.home-nav .list-item:before {
+    background-image: -webkit-linear-gradient(315deg, #051937, #422d5b 25%, #853c71 50%, #c65074 75%, #fa7268);
+    background-image: -o-linear-gradient(315deg, #051937 0, #422d5b 25%, #853c71 50%, #c65074 75%, #fa7268 100%);
+    background-image: linear-gradient(135deg, #051937, #422d5b 25%, #853c71 50%, #c65074 75%, #fa7268);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    opacity: .8
+}
+
+.home-nav .list-item span {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    z-index: 3
+}
+
+.home-nav .list-item:first-child {
+    background: url(https://images.pexels.com/photos/837140/pexels-photo-837140.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat
+}
+
+.home-nav .list-item:nth-child(2) {
+    background: url(https://images.pexels.com/photos/1549200/pexels-photo-1549200.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat
+}
+
+.home-nav .list-item:nth-child(3) {
+    background: url(https://images.pexels.com/photos/1036856/pexels-photo-1036856.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat
+}
+
+
+#catalog-grid,
+div[data-espotname^=HomePage_Main] {
+	background-color: #fcfcfa;
+	background-image: none;
+}
+
+/* potentially remove line 8 */
+div[data-espotname^=hol-PrimaryPDPPromoEMS],
+div[data-espotname^=hol-PrimaryPDPPromoEMS-mobile] {
+	overflow: visible;
+}
+
+.genericESpot .block {
+	display: block;
+}
+
+.genericESpot button:hover {
+	cursor: pointer;
+}
+
+.genericESpot button:focus,
+.genericESpot a:focus {
+	outline: 1px dashed #000;
+	outline-offset: 5px;
+}
+
+.genericESpot .flexcenter.rel,
+.genericESpot .rel {
+	position: relative;
+}
+
+br {
+	display: block;
+}
+
+.copybox img {
+	margin: 0 auto;
+}
+
+.js .home .hero-wrap {
+	height: 100%;
+}
+
+.content-wrap .content {
+	width: 100%;
+}
+
+.content-wrap .content #primary-content {
+	padding: 0;
+}
+
+.header__gms-blue {
+	font-size: 1.3rem;
+}
+
+.genericESpot,
+.genericESpot .bg,
+.genericESpot .cathero,
+.genericESpot .hpbanner,
+.genericESpot .hptout {
+	overflow: hidden;
+}
+
+.genericESpot .bg,
+.genericESpot .cathero,
+.genericESpot .hpbanner,
+.genericESpot .hptout {
+	position: relative;
+	width: 100%;
+}
+
+.genericESpot .hpbanner {
+	margin: 0 0 10px;
+	padding: 0 0 .13em 0;
+}
+
+.genericESpot .copybox {
+	position: relative;
+	text-align: center;
+}
+
+.genericESpot .textBG,
+#primary-content .genericESpot .textBG {
+	border-radius: 3px;
+	margin: .03em auto;
+	padding: 0 0.5em;
+}
+
+@media only screen and (max-width:767px) {
+	.genericESpot .dtbreak {
+		display: none !important;
+	}
+
+	.genericESpot .mobreak {
+		display: block;
+	}
+
+	.genericESpot .hpbanner .copybox,
+	.genericESpot .cathero .copybox {
+		width: 100%;
+	}
+
+	.genericESpot .newDynoBox,
+	.genericESpot .dynobox {
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		height: 100%;
+		align-items: center;
+	}
+
+	.genericESpot .hptout {
+		margin: 0 0 1.8em;
+		overflow: visible;
+	}
+
+	.genericESpot .hptout.wLegal-1 {
+		margin-bottom: 2.3em;
+	}
+
+	.genericESpot .hptout.wLegal-2 {
+		margin-bottom: 2.5em;
+	}
+
+	.genericESpot .hptout.wLegal-3 {
+		margin-bottom: 2.7em;
+	}
+
+	.genericESpot .ctas {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width:768px) {
+	.genericESpot .mobreak {
+		display: none !important;
+	}
+
+	.genericESpot .dtbreak {
+		display: block;
+	}
+
+	.genericESpot .dynobox {
+		position: relative;
+	}
+
+	.genericESpot .newDynoBox {
+		position: relative;
+		width: 0em;
+	}
+
+	.genericESpot .hptout {
+		margin: 0 0 30px;
+	}
+}
+
+.genericESpot .flexbottom,
+.genericESpot .flexcenter,
+.genericESpot .flextop {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.genericESpot .flexcenter {
+	align-items: center;
+}
+
+.genericESpot .flexbottom {
+	padding: 0 0 1%;
+	align-items: flex-end;
+}
+
+.genericESpot .flextop {
+	padding: 1% 0 0;
+	align-items: flex-start;
+}
+
+.genericESpot .flexbox {
+	display: flex;
+}
+
+.genericESpot .flexbox.row {
+	flex-direction: row;
+}
+
+.genericESpot .flexbox.row-reverse {
+	flex-direction: row-reverse;
+}
+
+.genericESpot .flexbox.column {
+	flex-direction: column;
+}
+
+.genericESpot .flexbox.column-reverse {
+	flex-direction: column-reverse;
+}
+
+.genericESpot .flexbox.start {
+	justify-content: flex-start;
+}
+
+.genericESpot .flexbox.center {
+	justify-content: center;
+}
+
+.genericESpot .flexbox.end {
+	justify-content: flex-end;
+}
+
+.genericESpot .flexbox.space-around {
+	justify-content: space-around;
+}
+
+.genericESpot .flexbox.space-between {
+	justify-content: space-between;
+}
+
+.genericESpot .flexbox.align-stretch {
+	align-items: stretch;
+}
+
+.genericESpot .flexbox.align-start {
+	align-items: flex-start;
+}
+
+.genericESpot .flexbox.align-center {
+	align-items: center;
+}
+
+.genericESpot .flexbox.align-end {
+	align-items: flex-end;
+}
+
+.genericESpot .flexbox.wrap {
+	flex-wrap: wrap;
+}
+
+.genericESpot .flexbox.wrap-reverse {
+	flex-wrap: wrap-reverse;
+}
+
+.genericESpot .flexbox.nowrap {
+	flex-wrap: nowrap;
+}
+
+.genericESpot .cta-container {
+	position: relative;
+	margin: 0 auto;
+	padding: .10em 0 .15em 0;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.genericESpot .box-cta,
+.genericESpot .box-cta-single,
+.genericESpot .box-cta-full {
+	font-size: .22em;
+	letter-spacing: 0.04em;
+	border: 1px solid;
+	line-height: 1;
+	margin: 0;
+	text-align: center;
+	display: inline-block;
+	border-radius: 3px;
+	text-decoration: none;
+	padding: 0.8em 0;
+}
+
+.genericESpot .box-cta {
+	width: calc(330em / 24);
+}
+
+.genericESpot .cta-container .box-cta-full {
+	margin-top: 1.1em;
+}
+
+.genericESpot .box-cta-single,
+.genericESpot .box-cta-full {
+	width: calc(690em / 24);
+}
+
+@media only screen and (max-width:767px) {
+	.genericESpot .ctas .cta-container .mo-cta {
+		background-color: transparent;
+		border: 1px solid #292A33;
+		color: #292A33;
+	}
+
+	.genericESpot .cta-container {
+		padding: .2em 0.25em;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.genericESpot .box-cta,
+	.genericESpot .box-cta-single,
+	.genericESpot .box-cta-full {
+		margin: 0 2%;
+	}
+
+	.genericESpot .box-cta {
+		width: 42.5%;
+	}
+
+	.genericESpot .box-cta-full {
+		margin-top: 1em;
+	}
+
+	.genericESpot .box-cta-single,
+	.genericESpot .box-cta-full {
+		width: 89%;
+	}
+}
+
+@media only screen and (min-width:768px) {
+	.genericESpot .box-cta {
+		font-size: .16em;
+		width: calc(185em / 16);
+	}
+
+	.genericESpot .cta-container {
+		width: 3.88em;
+		justify-content: space-between;
+	}
+
+	.genericESpot .box-cta-single {
+		font-size: .16em;
+		width: calc(258em / 16);
+		margin: 0 auto;
+	}
+
+	.genericESpot .box-cta-full {
+		font-size: .16em;
+		width: calc(258em / 10.6);
+	}
+}
+
+#primary-content .genericESpot .hco-eu-show,
+#primary-content .genericESpot .hco-mx-show,
+#primary-content .genericESpot .hco-uk-show,
+#primary-content .genericESpot .hco-us-show,
+#primary-content .genericESpot .hco-ca-show,
+#primary-content .genericESpot span.hco-ca-show,
+#primary-content .genericESpot span.hco-eu-show,
+#primary-content .genericESpot span.hco-mx-show,
+#primary-content .genericESpot span.hco-uk-show,
+#primary-content .genericESpot span.hco-us-show,
+.genericESpot .hco-ca-show,
+.genericESpot .hco-eu-show,
+.genericESpot .hco-mx-show,
+.genericESpot .hco-uk-show,
+.genericESpot .hco-us-show,
+.genericESpot span.hco-ca-show,
+.genericESpot span.hco-eu-show,
+.genericESpot span.hco-mx-show,
+.genericESpot span.hco-uk-show,
+.genericESpot span.hco-us-show,
+#primary-content .genericESpot .hco-eu-show--inline-block,
+#primary-content .genericESpot .hco-mx-show--inline-block,
+#primary-content .genericESpot .hco-uk-show--inline-block,
+#primary-content .genericESpot .hco-us-show--inline-block,
+#primary-content .genericESpot .hco-ca-show--inline-block,
+#primary-content .genericESpot span.hco-ca-show--inline-block,
+#primary-content .genericESpot span.hco-eu-show--inline-block,
+#primary-content .genericESpot span.hco-mx-show--inline-block,
+#primary-content .genericESpot span.hco-uk-show--inline-block,
+#primary-content .genericESpot span.hco-us-show--inline-block,
+.genericESpot .hco-ca-show--inline-block,
+.genericESpot .hco-eu-show--inline-block,
+.genericESpot .hco-mx-show--inline-block,
+.genericESpot .hco-uk-show--inline-block,
+.genericESpot .hco-us-show--inline-block,
+.genericESpot span.hco-ca-show--inline-block,
+.genericESpot span.hco-eu-show--inline-block,
+.genericESpot span.hco-mx-show--inline-block,
+.genericESpot span.hco-uk-show--inline-block,
+.genericESpot span.hco-us-show--inline-block,
+#primary-content .genericESpot .hco-eu-show--flex,
+#primary-content .genericESpot .hco-mx-show--flex,
+#primary-content .genericESpot .hco-uk-show--flex,
+#primary-content .genericESpot .hco-us-show--flex,
+#primary-content .genericESpot .hco-ca-show--flex,
+#primary-content .genericESpot span.hco-ca-show--flex,
+#primary-content .genericESpot span.hco-eu-show--flex,
+#primary-content .genericESpot span.hco-mx-show--flex,
+#primary-content .genericESpot span.hco-uk-show--flex,
+#primary-content .genericESpot span.hco-us-show--flex,
+.genericESpot .hco-ca-show--flex,
+.genericESpot .hco-eu-show--flex,
+.genericESpot .hco-mx-show--flex,
+.genericESpot .hco-uk-show--flex,
+.genericESpot .hco-us-show--flex,
+.genericESpot span.hco-ca-show--flex,
+.genericESpot span.hco-eu-show--flex,
+.genericESpot span.hco-mx-show--flex,
+.genericESpot span.hco-uk-show--flex,
+.genericESpot span.hco-us-show--flex {
+	display: none
+}
+
+body.store-10251 #primary-content .genericESpot .hco-us-show,
+body.store-10251 #primary-content .genericESpot span.hco-us-show,
+body.store-10251 .genericESpot .hco-us-show,
+body.store-10251 .genericESpot span.hco-us-show {
+	display: block;
+}
+
+body.store-10251 #primary-content .genericESpot .hco-us-show--inline-block,
+body.store-10251 #primary-content .genericESpot span.hco-us-show--inline-block,
+body.store-10251 .genericESpot .hco-us-show--inline-block,
+body.store-10251 .genericESpot span.hco-us-show--inline-block {
+	display: inline-block;
+}
+
+body.store-10251 #primary-content .genericESpot .hco-us-show--flex,
+body.store-10251 #primary-content .genericESpot span.hco-us-show--flex,
+body.store-10251 .genericESpot .hco-us-show--flex,
+body.store-10251 .genericESpot span.hco-us-show--flex {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: -webkit-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+body.store-11308 #primary-content .genericESpot .hco-ca-show,
+body.store-11308 #primary-content .genericESpot span.hco-ca-show,
+body.store-11308 .genericESpot .hco-ca-show,
+body.store-11308 .genericESpot span.hco-ca-show {
+	display: block;
+}
+
+body.store-11308 #primary-content .genericESpot .hco-ca-show--inline-block,
+body.store-11308 #primary-content .genericESpot span.hco-ca-show--inline-block,
+body.store-11308 .genericESpot .hco-ca-show--inline-block,
+body.store-11308 .genericESpot span.hco-ca-show--inline-block {
+	display: inline-block;
+}
+
+body.store-11308 #primary-content .genericESpot .hco-ca-show--flex,
+body.store-11308 #primary-content .genericESpot span.hco-ca-show--flex,
+body.store-11308 .genericESpot .hco-ca-show--flex,
+body.store-11308 .genericESpot span.hco-ca-show--flex {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: -webkit-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+body.store-11205 #primary-content .genericESpot .hco-mx-show,
+body.store-11205 #primary-content .genericESpot span.hco-mx-show,
+body.store-11205 .genericESpot .hco-mx-show,
+body.store-11205 .genericESpot span.hco-mx-show {
+	display: block;
+}
+
+body.store-11205 #primary-content .genericESpot .hco-mx-show--inline-block,
+body.store-11205 #primary-content .genericESpot span.hco-mx-show--inline-block,
+body.store-11205 .genericESpot .hco-mx-show--inline-block,
+body.store-11205 .genericESpot span.hco-mx-show--inline-block {
+	display: inline-block;
+}
+
+body.store-11205 #primary-content .genericESpot .hco-mx-show--flex,
+body.store-11205 #primary-content .genericESpot span.hco-mx-show--flex,
+body.store-11205 .genericESpot .hco-mx-show--flex,
+body.store-11205 .genericESpot span.hco-mx-show--flex {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: -webkit-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+body.store-19158 #primary-content .genericESpot .hco-eu-show,
+body.store-19158 #primary-content .genericESpot span.hco-eu-show,
+body.store-19158 .genericESpot .hco-eu-show,
+body.store-19158 .genericESpot span.hco-eu-show {
+	display: block;
+}
+
+body.store-19158 #primary-content .genericESpot .hco-eu-show--inline-block,
+body.store-19158 #primary-content .genericESpot span.hco-eu-show--inline-block,
+body.store-19158 .genericESpot .hco-eu-show--inline-block,
+body.store-19158 .genericESpot span.hco-eu-show--inline-block {
+	display: inline-block;
+}
+
+body.store-19158 #primary-content .genericESpot .hco-eu-show--flex,
+body.store-19158 #primary-content .genericESpot span.hco-eu-show--flex,
+body.store-19158 .genericESpot .hco-eu-show--flex,
+body.store-19158 .genericESpot span.hco-eu-show--flex {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: -webkit-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+body.store-19659 #primary-content .genericESpot .hco-uk-show,
+body.store-19659 #primary-content .genericESpot span.hco-uk-show,
+body.store-19659 .genericESpot .hco-uk-show,
+body.store-19659 .genericESpot span.hco-uk-show {
+	display: block;
+}
+
+body.store-19659 #primary-content .genericESpot .hco-uk-show--inline-block,
+body.store-19659 #primary-content .genericESpot span.hco-uk-show--inline-block,
+body.store-19659 .genericESpot .hco-uk-show--inline-block,
+body.store-19659 .genericESpot span.hco-uk-show--inline-block {
+	display: inline-block;
+}
+
+body.store-19659 #primary-content .genericESpot .hco-eu-show--flex,
+body.store-19659 #primary-content .genericESpot span.hco-eu-show--flex,
+body.store-19659 .genericESpot .hco-eu-show--flex,
+body.store-19659 .genericESpot span.hco-eu-show--flex {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: -webkit-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+/* Font sizes are calculated as follows: (COMP SIZE / Screen Size) * 10 = Xrem */
+@media only screen and (min-width:1270px) {
+	.genericESpot {
+		font-size: 100px;
+	}
+}
+
+@media only screen and (max-width: 1269px) {
+	.genericESpot {
+		font-size: 9.6142rem;
+	}
+}
+
+@media only screen and (max-width: 1220px) {
+	.genericESpot {
+		font-size: 9.2205rem;
+	}
+}
+
+@media only screen and (max-width: 1170px) {
+	.genericESpot {
+		font-size: 8.8268rem;
+	}
+}
+
+@media only screen and (max-width: 1120px) {
+	.genericESpot {
+		font-size: 8.4331rem;
+	}
+}
+
+@media only screen and (max-width: 1070px) {
+	.genericESpot {
+		font-size: 8.0393rem;
+	}
+}
+
+@media only screen and (max-width: 1020px) {
+	.genericESpot {
+		font-size: 7.6457rem;
+	}
+}
+
+@media only screen and (max-width: 970px) {
+	.genericESpot {
+		font-size: 7.252rem;
+	}
+}
+
+@media only screen and (max-width: 920px) {
+	.genericESpot {
+		font-size: 6.8583rem;
+	}
+}
+
+@media only screen and (max-width: 870px) {
+	.genericESpot {
+		font-size: 6.4646rem;
+	}
+}
+
+@media only screen and (max-width: 820px) {
+	.genericESpot {
+		font-size: 6.0472rem;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.genericESpot {
+		font-size: 12.451298701rem;
+	}
+}
+
+@media only screen and (max-width: 745px) {
+	.genericESpot {
+		font-size: 12.094155844rem;
+	}
+}
+
+@media only screen and (max-width: 717px) {
+	.genericESpot {
+		font-size: 11.63961039rem;
+	}
+}
+
+@media only screen and (max-width: 685px) {
+	.genericESpot {
+		font-size: 11.12012987rem;
+	}
+}
+
+@media only screen and (max-width: 667px) {
+	.genericESpot {
+		font-size: 10.974025974rem;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.genericESpot {
+		font-size: 10.038961039rem;
+	}
+}
+
+/* We base our calculations off of a comp-size of 616px, despite the comps design uses are at 640px. This allows us to have a larger mobile font size on smaller devices, and larger ones on tablets. */
+@media only screen and (max-width: 616px) {
+	.genericESpot {
+		font-size: 10rem;
+	}
+}
+
+@media only screen and (max-width: 590px) {
+	.genericESpot {
+		font-size: 9.577922078rem;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.genericESpot {
+		font-size: 9.350649351rem;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	.genericESpot {
+		font-size: 8.766233766rem;
+	}
+}
+
+@media only screen and (max-width: 517px) {
+	.genericESpot {
+		font-size: 8.392857143rem;
+	}
+}
+
+@media only screen and (max-width: 485px) {
+	.genericESpot {
+		font-size: 7.873376623rem;
+	}
+}
+
+@media only screen and (max-width: 467px) {
+	.genericESpot {
+		font-size: 7.581168831rem;
+	}
+}
+
+@media only screen and (max-width: 440px) {
+	.genericESpot {
+		font-size: 7.142857143rem;
+	}
+}
+
+@media only screen and (max-width: 417px) {
+	.genericESpot {
+		font-size: 6.769480519rem;
+	}
+}
+
+@media only screen and (max-width: 415px) {
+	.genericESpot {
+		font-size: 6.737012987rem;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.genericESpot {
+		font-size: 6.493506494rem;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.genericESpot {
+		font-size: 6.087662338rem;
+	}
+}
+
+@media only screen and (max-width: 367px) {
+	.genericESpot {
+		font-size: 5.957792208rem;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.genericESpot {
+		font-size: 5.844155844rem;
+	}
+}
+
+@media only screen and (max-width: 340px) {
+	.genericESpot {
+		font-size: 5.5519480519rem;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.genericESpot {
+		font-size: 5.194805195rem;
+	}
+}
+
+/* NEW FONTS */
+#primary-content .genericESpot .pfd15,
+.genericESpot .pfd15 {
+	font-size: .15em;
+
+	line-height: 110%;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+#primary-content .genericESpot .pfd15s,
+.genericESpot .pfd15s {
+	font-size: .15em;
+
+	line-height: 110%;
+	font-variant-ligatures: none;
+	letter-spacing: 0.04em;
+}
+
+#primary-content .genericESpot .pfd20,
+.genericESpot .pfd20 {
+	font-size: .20em;
+
+	line-height: 110%;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+#primary-content .genericESpot .pfd20s,
+.genericESpot .pfd20s {
+	font-size: .20em;
+
+	line-height: 110%;
+	font-variant-ligatures: none;
+	letter-spacing: 0.04em;
+}
+
+#primary-content .genericESpot .pfd25,
+.genericESpot .pfd25 {
+	font-size: .25em;
+
+	line-height: 110%;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+#primary-content .genericESpot .pfd25s,
+.genericESpot .pfd25s {
+	font-size: .25em;
+
+	line-height: 110%;
+	font-variant-ligatures: none;
+	letter-spacing: 0.04em;
+}
+
+#primary-content .genericESpot .dn15,
+.genericESpot .dn15 {
+	font-size: .15em;
+
+	line-height: 110%;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+#primary-content .genericESpot .dn20,
+.genericESpot .dn20 {
+	font-size: .20em;
+
+	line-height: 110%;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+#primary-content .genericESpot .dn25,
+.genericESpot .dn25 {
+	font-size: .25em;
+
+	line-height: 110%;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+#primary-content .genericESpot .dn30,
+.genericESpot .dn30 {
+	font-size: .30em;
+
+	line-height: 110%;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+#primary-content .genericESpot .dn35,
+.genericESpot .dn35 {
+	font-size: .35em;
+
+	line-height: 110%;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+#primary-content .genericESpot .dn40,
+.genericESpot .dn40 {
+	font-size: .40em;
+
+	line-height: 110%;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+#primary-content .genericESpot .dn45,
+.genericESpot .dn45 {
+	font-size: .45em;
+
+	line-height: 110%;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+#primary-content .genericESpot .dn50,
+.genericESpot .dn50 {
+	font-size: .50em;
+
+	line-height: 110%;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+#primary-content .genericESpot .dn55,
+.genericESpot .dn55 {
+	font-size: .55em;
+
+	line-height: 110%;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+#primary-content .genericESpot .dn60,
+.genericESpot .dn60 {
+	font-size: .60em;
+
+	line-height: 110%;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+#primary-content .genericESpot .dn65,
+.genericESpot .dn65 {
+	font-size: .65em;
+
+	line-height: 110%;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+#primary-content .genericESpot .dn70,
+.genericESpot .dn70 {
+	font-size: .70em;
+
+	line-height: 110%;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+#primary-content .genericESpot .dn75,
+.genericESpot .dn75 {
+	font-size: .75em;
+
+	line-height: 110%;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+#primary-content .genericESpot .dn80,
+.genericESpot .dn80 {
+	font-size: .80em;
+
+	line-height: 110%;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+#primary-content .genericESpot .dn85,
+.genericESpot .dn85 {
+	font-size: .85em;
+
+	line-height: 110%;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+#primary-content .genericESpot .dn90,
+.genericESpot .dn90 {
+	font-size: .90em;
+
+	line-height: 110%;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+#primary-content .genericESpot .dn95,
+.genericESpot .dn95 {
+	font-size: .95em;
+
+	line-height: 110%;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+#primary-content .genericESpot .dn100,
+.genericESpot .dn100 {
+	font-size: 1em;
+
+	line-height: 110%;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+@media only screen and (min-width:768px) {
+
+	#primary-content .genericESpot .pfd15-d,
+	.genericESpot .pfd15-d {
+		font-size: .15em;
+
+		line-height: 110%;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+	}
+
+	#primary-content .genericESpot .pfd15s-d,
+	.genericESpot .pfd15s-d {
+		font-size: .15em;
+
+		line-height: 110%;
+		font-variant-ligatures: none;
+		letter-spacing: 0.04em;
+	}
+
+	#primary-content .genericESpot .pfd20-d,
+	.genericESpot .pfd20-d {
+		font-size: .2em;
+
+		line-height: 110%;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+	}
+
+	#primary-content .genericESpot .pfd20s-d,
+	.genericESpot .pfd20s-d {
+		font-size: .2em;
+
+		line-height: 110%;
+		font-variant-ligatures: none;
+		letter-spacing: 0.04em;
+	}
+
+	#primary-content .genericESpot .pfd25-d,
+	.genericESpot .pfd25-d {
+		font-size: .25em;
+
+		line-height: 110%;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+	}
+
+	#primary-content .genericESpot .pfd25s-d,
+	.genericESpot .pfd25s-d {
+		font-size: .25em;
+
+		line-height: 110%;
+		font-variant-ligatures: none;
+		letter-spacing: 0.04em;
+	}
+
+	#primary-content .genericESpot .dn15-d,
+	.genericESpot .dn15-d {
+		font-size: .15em;
+
+		line-height: 110%;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+	}
+
+	#primary-content .genericESpot .dn20-d,
+	.genericESpot .dn20-d {
+		font-size: .2em;
+
+		line-height: 110%;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+	}
+
+	#primary-content .genericESpot .dn25-d,
+	.genericESpot .dn25-d {
+		font-size: .25em;
+
+		line-height: 110%;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+	}
+
+	#primary-content .genericESpot .dn30-d,
+	.genericESpot .dn30-d {
+		font-size: .30em;
+
+		line-height: 110%;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+	}
+
+	#primary-content .genericESpot .dn35-d,
+	.genericESpot .dn35-d {
+		font-size: .35em;
+
+		line-height: 110%;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+	}
+
+	#primary-content .genericESpot .dn40-d,
+	.genericESpot .dn40-d {
+		font-size: .40em;
+
+		line-height: 110%;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+	}
+
+	#primary-content .genericESpot .dn45-d,
+	.genericESpot .dn45-d {
+		font-size: .45em;
+
+		line-height: 110%;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+	}
+
+	#primary-content .genericESpot .dn50-d,
+	.genericESpot .dn50-d {
+		font-size: .50em;
+
+		line-height: 110%;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+	}
+
+	#primary-content .genericESpot .dn55-d,
+	.genericESpot .dn55-d {
+		font-size: .55em;
+
+		line-height: 110%;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+	}
+
+	#primary-content .genericESpot .dn60-d,
+	.genericESpot .dn60-d {
+		font-size: .60em;
+
+		line-height: 110%;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+	}
+
+	#primary-content .genericESpot .dn65-d,
+	.genericESpot .dn65-d {
+		font-size: .65em;
+
+		line-height: 110%;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+	}
+
+	#primary-content .genericESpot .dn70-d,
+	.genericESpot .dn70-d {
+		font-size: .70em;
+
+		line-height: 110%;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+	}
+
+	#primary-content .genericESpot .dn75-d,
+	.genericESpot .dn75-d {
+		font-size: .75em;
+
+		line-height: 110%;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+	}
+
+	#primary-content .genericESpot .dn80-d,
+	.genericESpot .dn80-d {
+		font-size: .80em;
+
+		line-height: 110%;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+	}
+
+	#primary-content .genericESpot .dn85-d,
+	.genericESpot .dn85-d {
+		font-size: .85em;
+
+		line-height: 110%;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+	}
+
+	#primary-content .genericESpot .dn90-d,
+	.genericESpot .dn90-d {
+		font-size: .90em;
+
+		line-height: 110%;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+	}
+
+	#primary-content .genericESpot .dn95-d,
+	.genericESpot .dn95-d {
+		font-size: .95em;
+
+		line-height: 110%;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+	}
+
+	#primary-content .genericESpot .dn100-d,
+	.genericESpot .dn100-d {
+		font-size: 1em;
+
+		line-height: 110%;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+	}
+}
+
+
+/* ASTERISK STYLES */
+#primary-content .genericESpot .pfd15 .newAsterisk,
+.genericESpot .pfd15 .newAsterisk,
+#primary-content .genericESpot .pfd15-d .newAsterisk,
+.genericESpot .pfd15-d .newAsterisk #primary-content .genericESpot .pfd15s .newAsterisk,
+.genericESpot .pfd15s .newAsterisk,
+#primary-content .genericESpot .pfd15s-d .newAsterisk,
+.genericESpot .pfd15s-d .newAsterisk {
+	font-size: 100%;
+	bottom: 0.05em;
+}
+
+#primary-content .genericESpot .pfd20 .newAsterisk,
+.genericESpot .pfd20 .newAsterisk,
+#primary-content .genericESpot .pfd20-d .newAsterisk,
+.genericESpot .pfd20-d .newAsterisk #primary-content .genericESpot .pfd20s .newAsterisk,
+.genericESpot .pfd20s .newAsterisk,
+#primary-content .genericESpot .pfd20s-d .newAsterisk,
+.genericESpot .pfd20s-d .newAsterisk {
+	font-size: 100%;
+	bottom: 0.1em;
+}
+
+#primary-content .genericESpot .dn15 .newAsterisk,
+.genericESpot .dn15 .newAsterisk,
+#primary-content .genericESpot .dn15-d .newAsterisk,
+.genericESpot .dn15-d .newAsterisk {
+	font-size: 100%;
+	bottom: 0.05em;
+}
+
+#primary-content .genericESpot .dn20 .newAsterisk,
+.genericESpot .dn20 .newAsterisk,
+#primary-content .genericESpot .dn20-d .newAsterisk,
+.genericESpot .dn20-d .newAsterisk {
+	font-size: 100%;
+	bottom: 0.05em;
+}
+
+#primary-content .genericESpot .dn25 .newAsterisk,
+.genericESpot .dn25 .newAsterisk,
+#primary-content .genericESpot .dn25-d .newAsterisk,
+.genericESpot .dn25-d .newAsterisk {
+	font-size: 95%;
+	bottom: 0.05em;
+}
+
+#primary-content .genericESpot .dn30 .newAsterisk,
+.genericESpot .dn30 .newAsterisk,
+#primary-content .genericESpot .dn30-d .newAsterisk,
+.genericESpot .dn30-d .newAsterisk {
+	font-size: 75%;
+	bottom: 0.15em;
+}
+
+#primary-content .genericESpot .dn35 .newAsterisk,
+.genericESpot .dn35 .newAsterisk,
+#primary-content .genericESpot .dn35-d .newAsterisk,
+.genericESpot .dn35-d .newAsterisk {
+	font-size: 75%;
+	bottom: 0.15em;
+}
+
+#primary-content .genericESpot .dn40 .newAsterisk,
+.genericESpot .dn40 .newAsterisk,
+#primary-content .genericESpot .dn40-d .newAsterisk,
+.genericESpot .dn40-d .newAsterisk {
+	font-size: 68%;
+	bottom: 0.15em;
+}
+
+#primary-content .genericESpot .dn45 .newAsterisk,
+.genericESpot .dn45 .newAsterisk,
+#primary-content .genericESpot .dn45-d .newAsterisk,
+.genericESpot .dn45-d .newAsterisk {
+	font-size: 61%;
+	bottom: 0.2em;
+}
+
+#primary-content .genericESpot .dn50 .newAsterisk,
+.genericESpot .dn50 .newAsterisk,
+#primary-content .genericESpot .dn50-d .newAsterisk,
+.genericESpot .dn50-d .newAsterisk {
+	font-size: 56%;
+	bottom: 0.25em;
+}
+
+#primary-content .genericESpot .dn55 .newAsterisk,
+.genericESpot .dn55 .newAsterisk,
+#primary-content .genericESpot .dn55-d .newAsterisk,
+.genericESpot .dn55-d .newAsterisk {
+	font-size: 51%;
+	bottom: 0.3em;
+}
+
+#primary-content .genericESpot .dn60 .newAsterisk,
+.genericESpot .dn60 .newAsterisk,
+#primary-content .genericESpot .dn60-d .newAsterisk,
+.genericESpot .dn60-d .newAsterisk {
+	font-size: 48%;
+	bottom: 0.35em;
+}
+
+#primary-content .genericESpot .dn65 .newAsterisk,
+.genericESpot .dn65 .newAsterisk,
+#primary-content .genericESpot .dn65-d .newAsterisk,
+.genericESpot .dn65-d .newAsterisk {
+	font-size: 45%;
+	bottom: 0.4em;
+}
+
+#primary-content .genericESpot .dn70 .newAsterisk,
+.genericESpot .dn70 .newAsterisk,
+#primary-content .genericESpot .dn70-d .newAsterisk,
+.genericESpot .dn70-d .newAsterisk {
+	font-size: 41%;
+	bottom: 0.5em;
+}
+
+#primary-content .genericESpot .dn75 .newAsterisk,
+.genericESpot .dn75 .newAsterisk,
+#primary-content .genericESpot .dn75-d .newAsterisk,
+.genericESpot .dn75-d .newAsterisk {
+	font-size: 38%;
+	bottom: 0.55em;
+}
+
+#primary-content .genericESpot .dn80 .newAsterisk,
+.genericESpot .dn80 .newAsterisk,
+#primary-content .genericESpot .dn80-d .newAsterisk,
+.genericESpot .dn80-d .newAsterisk {
+	font-size: 37%;
+	bottom: 0.55em;
+}
+
+#primary-content .genericESpot .dn85 .newAsterisk,
+.genericESpot .dn85 .newAsterisk,
+#primary-content .genericESpot .dn85-d .newAsterisk,
+.genericESpot .dn85-d .newAsterisk {
+	font-size: 35%;
+	bottom: 0.65em;
+	margin-left: -0.1em;
+}
+
+#primary-content .genericESpot .dn90 .newAsterisk,
+.genericESpot .dn90 .newAsterisk,
+#primary-content .genericESpot .dn90-d .newAsterisk,
+.genericESpot .dn90-d .newAsterisk {
+	font-size: 34%;
+	bottom: 0.65em;
+	margin-left: -0.1em;
+}
+
+#primary-content .genericESpot .dn95 .newAsterisk,
+.genericESpot .dn95 .newAsterisk,
+#primary-content .genericESpot .dn95-d .newAsterisk,
+.genericESpot .dn95-d .newAsterisk {
+	font-size: 32%;
+	bottom: 0.7em;
+	margin-left: -0.1em;
+}
+
+#primary-content .genericESpot .dn100 .newAsterisk,
+.genericESpot .dn100 .newAsterisk,
+#primary-content .genericESpot .dn100-d .newAsterisk,
+.genericESpot .dn100-d .newAsterisk {
+	font-size: 30%;
+	bottom: 0.8em;
+	margin-left: -0.1em;
+}
+
+#primary-content .genericESpot .legal-type,
+.genericESpot .legal-type {
+	font-family: "Source Sans Pro Regular";
+	font-size: 11px;
+	line-height: 110%;
+	letter-spacing: .04em;
+	padding: 0 0 0 .04em;
+	color: #292A33;
+	text-align: center;
+}
+
+#primary-content .genericESpot .legal-type a,
+.genericESpot .legal-type a {
+	text-decoration: underline;
+	font-size: 11px;
+	text-transform: none;
+}
+
+#primary-content .genericESpot .SaleLP .legal-type {
+	padding: .5em 0 0 .02em;
+	max-width: 90%;
+	margin: 0 auto;
+	font-size: 11px;
+}
+
+#primary-content .genericESpot .SaleLP .legal-type a {
+	font-size: 11px;
+}
+
+@media only screen and (min-width:768px) {
+
+	#primary-content .genericESpot .legal-type.cream,
+	.genericESpot .legal-type.cream {
+		color: #fcfcfa;
+	}
+
+	#primary-content .genericESpot .legal-type.navy,
+	.genericESpot .legal-type.navy {
+		color: #292a33;
+	}
+}
+
+#primary-content .genericESpot .dolla,
+.genericESpot .dolla {
+	font-size: 50%;
+	vertical-align: super;
+	line-height: 0;
+}
+
+#primary-content .genericESpot .newAsterisk,
+.genericESpot .newAsterisk {
+	position: absolute;
+	margin-left: 0.05em;
+	line-height: inherit;
+
+}
+
+.genericESpot p {
+	color: #292A33;
+}
+
+#primary-content .genericESpot h2,
+.genericESpot h2 {
+	margin: 0;
+}
+
+#primary-content .genericESpot .cream,
+.genericESpot .cream {
+	color: #fcfcfa;
+	border-color: #fcfcfa;
+}
+
+#primary-content .genericESpot .navy,
+.genericESpot .navy {
+	color: #292A33;
+	border-color: #292A33;
+}
+
+#primary-content .genericESpot .red,
+.genericESpot .red {
+	color: #dd0331;
+	border-color: #dd0331;
+}
+
+#primary-content .genericESpot .white,
+.genericESpot .white {
+	color: #fff;
+	border-color: #fff;
+}
+
+#primary-content .genericESpot .blue,
+.genericESpot .blue {
+	color: #0a61af;
+	border-color: #0a61af;
+}
+
+#primary-content .genericESpot .black,
+.genericESpot .black {
+	color: #000;
+	border-color: #000;
+}
+
+#primary-content .genericESpot .gray,
+.genericESpot .gray,
+#primary-content .genericESpot .grey,
+.genericESpot .grey {
+	color: #474c50;
+	border-color: #474c50;
+}
+
+.genericESpot .creamBG {
+	background-color: #fcfcfa;
+}
+
+.genericESpot .navyBG {
+	background-color: #292A33;
+}
+
+.genericESpot .redBG {
+	background-color: #dd0331;
+	border: none;
+}
+
+.genericESpot .whiteBG {
+	background-color: #fff;
+}
+
+.genericESpot .blackBG {
+	background-color: #000;
+}
+
+.genericESpot .blueBG {
+	background-color: #0a61af;
+	border: none;
+}
+
+.genericESpot .grayBG,
+.genericESpot .greyBG {
+	background-color: #474c50;
+}
+
+@media only screen and (max-width:767px) {
+	.genericESpot .legal-type {
+		max-width: 90%;
+		margin: 0 auto;
+	}
+
+	.genericESpot .cnSwap {
+		color: #fcfcfa;
+		border-color: #fcfcfa;
+	}
+
+	.genericESpot .ncSwap {
+		color: #292A33;
+		border-color: #292A33;
+	}
+}
+
+@media only screen and (min-width:768px) {
+	.genericESpot .cnSwap {
+		color: #292A33;
+		border-color: #292A33;
+	}
+
+	.genericESpot .ncSwap {
+		color: #fcfcfa;
+		border-color: #fcfcfa;
+	}
+
+	.genericESpot #contentOps-Inline a.legal.promo-detail {
+		font-size: .11em;
+	}
+}
+
+/* INLINE STUFF */
+div[data-espotname^=gridInlineContentSpot] {
+	display: inline-block;
+}
+
+#primary-content .genericESpot .ops-inline-css,
+.genericESpot .ops-inline-css {
+	position: relative;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+#primary-content .genericESpot p.ops-inline-legal.legal-type,
+.genericESpot p.ops-inline-legal.legal-type {
+	padding: .5em 0;
+	max-width: 96%;
+	margin: 0 auto;
+}
+
+.genericESpot #contentOps-Inline .bg {
+	width: 100%;
+}
+
+.genericESpot #contentOps-Inline a.legal.promo-detail {
+	font-size: 11px;
+}
+
+@media only screen and (min-width:768px) and (max-width:959px) {
+	.genericESpot .ops-inline-css {
+		font-size: 10.5vw;
+	}
+}
+
+@media only screen and (min-width:960px) and (max-width:1024px) {
+	.genericESpot .ops-inline-css {
+		font-size: 9.8vw;
+	}
+}
+
+@media only screen and (min-width:1025px) and (max-width:1270px) {
+	.genericESpot .ops-inline-css {
+		font-size: 8vw;
+	}
+}
+
+@media only screen and (min-width:1271px) {
+	.genericESpot .ops-inline-css {
+		font-size: 100px;
+	}
+}
+
+@media only screen and (max-width:959px) {
+	.genericESpot .ops-inline-css .inline-dtbreak {
+		display: none !important;
+	}
+
+	.genericESpot .ops-inline-css {
+		top: 21px;
+	}
+}
+
+@media only screen and (min-width:960px) {
+	.genericESpot .ops-inline-css .inline-mobreak {
+		display: none !important;
+	}
+
+	.genericESpot .ops-inline-css {
+		top: 22px;
+	}
+}
+
+@media only screen and (min-width:768px) and (max-width:960px) {
+	.genericESpot .ops-inline-css .inline-copybox {
+		font-size: 155%;
+	}
+}
+
+/* Video Stuff */
+.genericESpot .videoWrapper {
+	position: relative;
+}
+
+.genericESpot .videoWrapper video {
+	display: block;
+}
+
+.genericESpot .hco-pause-button,
+.genericESpot .hco-play-button {
+	height: 3em;
+	width: 3em;
+	left: 0;
+	bottom: 0;
+	border: none;
+	position: absolute;
+}
+
+.genericESpot .hco-pause-button:focus,
+.genericESpot .hco-play-button:focus {
+	border: dashed 1px #000;
+}
+
+.genericESpot .hco-play-button {
+	background: url(//anf.scene7.com/is/content/anf/hol-site-play-button?$png$) no-repeat top left;
+}
+
+.genericESpot .hco-pause-button {
+	background: url(//anf.scene7.com/is/content/anf/hol-site-pause-button?$png$) no-repeat top left;
+}
+
+.genericESpot #nondenim-20190314-mariaJ p:not(.legal-type),
+.genericESpot #nondenim-20190314-mariaJ h2 {
+	font-size: inherit;
+}
+
+@media only screen and (max-width: 767px) {
+
+	/* make sure you position copybox with % */
+	.genericESpot #nondenim-20190314-mariaJ .copybox {
+		bottom: 38%;
+	}
+
+	.genericESpot #nondenim-20190314-mariaJ .cta-container {
+		padding: .2em 0.00em;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+
+	/* make sure you position newDynoBox with % */
+	.genericESpot #nondenim-20190314-mariaJ .newDynoBox {
+		width: 5em;
+		right: 1%;
+	}
+
+	.genericESpot #nondenim-20190314-mariaJ .hp-logo {}
+
+	.genericESpot #nondenim-20190314-mariaJ .legal-type {}
+}
+
+.genericESpot #dresses-20190314-mariaJ p:not(.legal-type),
+.genericESpot #dresses-20190314-mariaJ h2 {
+	font-size: inherit;
+}
+
+@media only screen and (max-width: 767px) {
+
+	/* make sure you position copybox with % */
+	.genericESpot #dresses-20190314-mariaJ .copybox {
+		top: 28%;
+		right: 24%;
+		text-align: left;
+	}
+
+	.genericESpot #dresses-20190314-mariaJ .cta-container {}
+}
+
+@media only screen and (min-width: 768px) {
+
+	/* make sure you position newDynoBox with % */
+	.genericESpot #dresses-20190314-mariaJ .newDynoBox {
+		width: 5em;
+		right: 26%;
+	}
+
+	.genericESpot #dresses-20190314-mariaJ .hp-logo {}
+
+	.genericESpot #dresses-20190314-mariaJ .legal-type {}
+}
+
+.genericESpot #swim-20190321-mariaJ p:not(.legal-type),
+.genericESpot #swim-20190321-mariaJ h2 {
+	font-size: inherit;
+}
+
+.genericESpot #swim-20190321-mariaJ .colorSpecial {
+	color: #ff6849;
+}
+
+@media only screen and (max-width: 767px) {
+
+	/* make sure you position copybox with % */
+	.genericESpot #swim-20190321-mariaJ .copybox {
+		bottom: 36%;
+	}
+
+	.genericESpot #swim-20190321-mariaJ .hp-logo {
+		width: 2em;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+
+	/* make sure you position newDynoBox with % */
+	.genericESpot #swim-20190321-mariaJ .newDynoBox {
+		width: 7em;
+		bottom: 7%;
+	}
+
+	.genericESpot #swim-20190321-mariaJ .hp-logo {
+		width: 1.8em;
+	}
+
+	.genericESpot #swim-20190321-mariaJ .cta-container {
+		margin-top: .2em;
+	}
+}
+
+
+.genericESpot #tops-20190321-mariaJ p:not(.legal-type),
+.genericESpot #tops-20190321-mariaJ h2 {
+	font-size: inherit;
+}
+
+@media only screen and (max-width: 767px) {
+
+	.genericESpot #tops-20190321-mariaJ .copybox {
+		bottom: 37%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+
+	.genericESpot #tops-20190321-mariaJ .newDynoBox {
+		width: 5em;
+		left: 24%;
+	}
+
+	.genericESpot #tops-20190321-mariaJ .ctas {
+		margin-top: .2em;
+	}
+}

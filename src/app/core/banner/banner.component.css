@@ -1,0 +1,57 @@
+.syeta-banner {
+    padding-top: 60px;
+    overflow: hidden
+}
+
+.syeta-banner .banner-item {
+    width: 100vw;
+    height: calc(100vh - 60px);
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-attachment: fixed
+}
+
+.syeta-banner .quote {
+    padding: 0 5%
+}
+
+.syeta-banner .quote h1 {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 52px;
+    font-style: italic
+}
+
+.syeta-banner .quote h1,
+.syeta-banner .quote p {
+    color: #fff;
+    margin-bottom: 48px;
+    text-align: center
+}
+
+.syeta-banner .quote p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 3px;
+    text-transform: uppercase
+}
+
+.syeta-banner .quote p:before {
+    background: #56bba7;
+    content: "";
+    display: block;
+    height: 2px;
+    margin: 48px auto 47px;
+    width: 50px
+}

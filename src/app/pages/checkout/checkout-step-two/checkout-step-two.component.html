@@ -1,0 +1,166 @@
+<div class="container checkout-2">
+  <div class="steps">
+    <div class="step active">
+      <div class="icon">
+        <mat-icon>
+          shopping_cart
+        </mat-icon>
+      </div><span>Giỏ hàng</span>
+    </div>
+    <div class="step active">
+      <div class="icon">
+        <mat-icon>
+          person
+        </mat-icon>
+      </div><span>Thông tin đặt hàng</span>
+    </div>
+    <div class="step">
+      <div class="icon">
+        <mat-icon>check</mat-icon>
+      </div><span>Xác nhận</span>
+    </div>
+  </div>
+  <div class="row reverse-lg">
+    <div class="col-lg-8 billing-info">
+      <form [formGroup]="checkoutStepTwoForm" (ngSubmit)="onSubmit()">
+        <div class="billing-address">
+          <h2>Thông tin giao hàng</h2>
+          <div class="form-group">
+            <label>Họ và tên
+              <span class="required">*</span>
+            </label>
+            <div class="field-wrapper">
+              <input type="text" formControlName="fullName">
+            </div>
+            <span *ngIf="(fullName.dirty || fullName.touched) && fullName.invalid && fullName.errors['required']">
+              Họ và tên không được phép để trống.
+            </span>
+            <span *ngIf="(fullName.dirty || fullName.touched) && fullName.invalid && fullName.errors['invalidValue']">
+              Họ và tên không hợp lệ.
+            </span>
+          </div>
+          <div class="form-group">
+            <label>Số điện thoại
+              <span class="required">*</span>
+            </label>
+            <div class="field-wrapper">
+              <input type="text" formControlName="phoneNumber">
+            </div>
+            <span
+              *ngIf="(phoneNumber.dirty || phoneNumber.touched) && phoneNumber.invalid && phoneNumber.errors['required']">
+              Số điện thoại không được phép để trống.
+            </span>
+            <span
+              *ngIf="(phoneNumber.dirty || phoneNumber.touched) && phoneNumber.invalid && phoneNumber.errors['invalidValue']">
+              Số điện thoại không hợp lệ.
+            </span>
+          </div>
+          <div class="form-group">
+            <label>Email
+              <span class="required">*</span>
+            </label>
+            <div class="field-wrapper">
+              <input type="text" formControlName="email">
+            </div>
+            <span *ngIf="(email.dirty || email.touched) && email.invalid && email.errors['required']">
+              Email không được phép để trống.
+            </span>
+            <span *ngIf="(email.dirty || email.touched) && email.invalid && email.errors['invalidValue']">
+              Email không hợp lệ.
+            </span>
+          </div>
+          <div class="form-group">
+            <label>Địa chỉ giao hàng
+              <span class="required">*</span>
+            </label>
+            <div class="field-wrapper">
+              <input type="text" formControlName="address">
+            </div>
+            <span *ngIf="(address.dirty || address.touched) && address.invalid && address.errors['required']">
+              Địa chỉ giao hàng không được phép để trống.
+            </span>
+          </div>
+          <div class="form-group">
+            <label>Ghi chú</label>
+            <div class="field-wrapper">
+              <textarea formControlName="note"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="controls-summary">
+          <a class="btn-prev" [routerLink]="[ '/checkout/buoc-1' ]">
+            <mat-icon>chevron_left</mat-icon>
+            <span>Quaylại</span>
+          </a>
+          <button type="submit" [disabled]="!checkoutStepTwoForm.valid" class="btn-next">
+            <span>Tiếp theo</span>
+            <mat-icon>chevron_right</mat-icon>
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="col-lg-4 order-summary">
+      <div class="tagline">
+        <h2>Đơn hàng ({{ totalQuantity | async }} sản phẩm)</h2>
+        <a [routerLink]="[ '/checkout/buoc-1' ]">
+          <mat-icon>
+            edit
+          </mat-icon>
+        </a>
+      </div>
+      <div class="cart-final">
+        <div class="item" *ngFor="let cartItem of (cartItems | async)">
+          <div class="image">
+            <img [src]="cartItem.product.imageUrl" alt="">
+          </div>
+          <div class="info">
+            <div class="title">
+              <h2>
+                {{ cartItem.product.title }}
+              </h2>
+            </div>
+            <div class="amount">x {{ cartItem.quantity }}</div>
+            <div class="detail">
+              <div class="block price">
+                <p>Đơn giá</p>
+                <p>
+                  {{ cartItem.product.price | VndCurrency}}
+                </p>
+              </div>
+              <div class="block total">
+                <p>Tổng</p>
+                <p>
+                  {{ cartItem.product.price * cartItem.quantity | VndCurrency}}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="order-info">
+        <div class="block total">
+          <p>Tạm tính</p>
+          <p *ngIf="(totalPrices | async) !== null">
+            {{ totalPrices | async | VndCurrency}}
+          </p>
+        </div>
+        <div class="block">
+          <p>Phí vận chuyển</p>
+          <p>{{ 0 | VndCurrency }}</p>
+        </div>
+        <div class="block">
+          <p>Giảm giá</p>
+          <p>{{ 0 | VndCurrency }}</p>
+        </div>
+        <div class="block">
+          <p>Thuế VAT</p>
+          <p>{{ vat }}%</p>
+        </div>
+        <div class="block total-final">
+          <p>Tổng tiền</p>
+          <p *ngIf="(totalPrices | async) !== null">{{ totalPricesWithVat | VndCurrency }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

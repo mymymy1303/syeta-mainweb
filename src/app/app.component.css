@@ -1,0 +1,13 @@
+.app-wrapper {
+    display: flex;
+}
+
+.sidemenu-wrapper {
+    flex: 0 0 320px;
+    max-width: 320px;
+}
+
+.content-wrapper {
+    flex: 0 0 calc(100% - 320px);
+    max-width: calc(100% - 320px);
+}

@@ -1,0 +1,16 @@
+<div class="header">
+  <p mat-dialog-title>
+    {{ data.heading }}
+  </p>
+</div>
+<mat-dialog-content class="mat-typography">
+    <img [src]="data.imageUrl" alt="">
+    <h2>
+      {{ data.title }}
+    </h2>
+    <div [innerHTML]="data.content"></div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-raised-button color="basic" (click)="close()">{{ data.closeText }}</button>
+  <button mat-button mat-raised-button color="accent" (click)="navigate()">{{ data.navigateText }}</button>
+</mat-dialog-actions>

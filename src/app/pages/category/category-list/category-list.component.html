@@ -1,0 +1,6 @@
+<div class="categories">
+  <a href="">Tất cả</a>
+  <a href="" *ngFor="let category of (categories | async)">
+    {{ category.title }}
+  </a>
+</div>

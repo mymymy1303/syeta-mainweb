@@ -1,0 +1,19 @@
+<header class="syeta-header">
+  <div class="header-container">
+    <div class="left-menu-wrapper">
+      <ul class="left-menu">
+        <li><a [routerLink]="[ '/product' ]">Sản phẩm</a></li>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+    <div class="logo-wrapper"><img src="./img/logo.svg" alt=""></div>
+    <div class="right-menu-wrapper">
+      <ul class="right-menu">
+        <li><a [routerLink]="[ '/checkout' ]">Giỏ hàng</a><span class="amount"> ({{ quantity | async }})</span></li>
+        <li><a href="#"><span class="lnr lnr-magnifier"></span></a></li>
+        <li><a href="#"> <span class="lnr lnr-user"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</header>

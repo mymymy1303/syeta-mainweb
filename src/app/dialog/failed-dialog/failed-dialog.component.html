@@ -1,0 +1,10 @@
+<div class="header">
+  <p mat-dialog-title>Thất bại</p>
+</div>
+<mat-dialog-content class="mat-typography">
+  <div [innerHtml]="data.message"></div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-raised-button color="basic" (click)="close()">{{ data.closeText }}</button>
+  <button mat-button mat-raised-button color="accent" (click)="fetch()">{{ data.fetchText }}</button>
+</mat-dialog-actions>

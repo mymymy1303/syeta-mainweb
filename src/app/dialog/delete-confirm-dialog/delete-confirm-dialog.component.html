@@ -1,0 +1,17 @@
+<form [formGroup]="deleteConfirmForm" (ngSubmit)="onSubmit()">
+  <div class="header">
+    <p mat-dialog-title>Xóa</p>
+    <h2>{{ data.message }}</h2>
+  </div>
+  <mat-dialog-content class="mat-typography">
+    <div class="dialog-body" [innerHtml]="data.body"></div>
+    <h2>Xác nhận tên sản phẩm muốn xóa</h2>
+    <input type="text" formControlName="title">
+    <span [hidden]="isMatchedTitle">Tên không đúng</span>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-button mat-raised-button color="basic" (click)="close()">{{ data.closeText }}</button>
+    <button mat-button mat-raised-button color="accent" type="submit">{{ data.deleteText }}</button>
+  </mat-dialog-actions>
+
+</form>

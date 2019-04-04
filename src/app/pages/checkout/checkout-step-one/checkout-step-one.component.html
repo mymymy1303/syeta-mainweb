@@ -1,0 +1,99 @@
+<div class="container">
+  <div class="steps">
+    <div class="step active">
+      <div class="icon">
+        <mat-icon>
+          shopping_cart
+        </mat-icon>
+      </div><span>Giỏ hàng</span>
+    </div>
+    <div class="step">
+      <div class="icon">
+        <mat-icon>
+          person
+        </mat-icon>
+      </div><span>Thông tin đặt hàng</span>
+    </div>
+    <div class="step">
+      <div class="icon">
+        <mat-icon>check</mat-icon>
+      </div><span>Xác nhận</span>
+    </div>
+  </div>
+  <div class="cart-summary">
+    <h1>Giỏ hàng</h1>
+    <h2 class="error" *ngIf="isEmptyCart">
+      Bạn chưa có sản phẩm nào trong giỏ hàng.
+    </h2>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Thông tin sản phẩm</th>
+            <th>Số lượng</th>
+            <th>Đơn giá</th>
+            <th>Tổng giá</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let cartItem of (cartItems | async)">
+            <td class="product-details">
+              <div class="item">
+                <div class="image">
+                  <img [src]="cartItem.product.imageUrl" alt="">
+                </div>
+                <a [routerLink]="[ '/product', cartItem.id ]">
+                  <span class="title">
+                    {{ cartItem.product.title }}
+                  </span>
+                </a>
+              </div>
+            </td>
+            <td class="product-quantity">
+              <div class="touchspin">
+                <a class="minus" href="javascript:void(0)" (click)="onQuantityDecrease($event, cartItem.id)">
+                  <mat-icon>remove</mat-icon>
+                </a>
+                <input type="number" readonly="" [defaultValue]="cartItem.quantity">
+                <a class="plus" href="javascript:void(0)" (click)="onQuantityIncrease($event, cartItem.id)">
+                  <mat-icon>add</mat-icon>
+                </a>
+              </div>
+            </td>
+            <td class="product-prices">
+              <div class="price">
+                {{ cartItem.product.price | VndCurrency}}
+              </div>
+            </td>
+            <td class="product-result">
+              <div class="total">
+                {{ cartItem.product.price * cartItem.quantity | VndCurrency}}
+              </div>
+            </td>
+            <td class="product-remove"><a class="btn-remove" (click)="deleteCartItem(cartItem.id, $event)">
+                <mat-icon>close</mat-icon>
+              </a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="price-summary">
+    <div class="helper">
+      <div>Cần thông tin hỗ trợ?</div>
+      <div>Liên hệ ngay: <a href="mailto:info@syeta.com"> info@syeta.com</a></div>
+    </div>
+    <div class="total-amount">
+      <div *ngIf="(totalPrices | async) !== null">Tạm tính:<span>
+          {{ totalPrices | async | VndCurrency}}
+        </span></div>
+    </div>
+  </div>
+  <div class="controls-summary">
+    <a class="btn-prev" [routerLink]="[ '/' ]">
+      <mat-icon>chevron_left</mat-icon>
+      <span>Quay lại</span>
+    </a><a class="btn-next" href="javascript:void(0)" (click)="onNextStepClick()"><span>Thanh toán</span>
+      <mat-icon>chevron_right</mat-icon>
+    </a></div>
+</div>

@@ -1,0 +1,39 @@
+<section class="syeta-product-detail">
+  <div class="syeta-product-container">
+    <div class="product-wrapper" *ngIf="(currentProduct | async) as product">
+      <div class="product-thumbnail">
+        <div class="big-thumbnail">
+          <div class="thumbnail">
+            <img [src]="product.imageUrl" [alt]="product.title">
+          </div>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-name">
+          <h2>
+            {{ product.title }}
+          </h2>
+        </div>
+        <div class="product-code">
+          <h3>
+            {{ product.briefContent }}
+          </h3>
+        </div>
+        <div class="product-description">
+          <h3>Mô tả sản phẩm:</h3>
+          <p>
+            {{ product.fullContent }}
+          </p>
+        </div>
+        <div class="product-addtocart">
+          <div class="product-price">
+            <span>
+              {{ product.price | VndCurrency}}
+            </span>
+          </div>
+        </div>
+        <div class="btn-wrapper"><a href="javascript:void(0)" (click)="onAddToCartClick(product, $event)">THÊM VÀO GIỎ HÀNG</a></div>
+      </div>
+    </div>
+  </div>
+</section>

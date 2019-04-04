@@ -1,0 +1,69 @@
+<section class="product-list-wrapper">
+  <div class="container">
+    <div class="view-options-wrapper">
+      <div class="view-option">
+        <label for="size">Số lượng hiển thị</label>
+        <select [(ngModel)]="size" id="size" (change)="onViewOptionChange()">
+          <option value="5" selected>5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+          <option value="25">25</option>
+          <option value="30">30</option>
+        </select>
+      </div>
+
+      <div class="view-option">
+        <label for="sortBy">Sắp xếp theo</label>
+        <select [(ngModel)]="sortBy" id="sortBy" (change)="onViewOptionChange()">
+          <option value="1" selected>Tên từ A đến Z</option>
+          <option value="2">Tên từ Z đến A</option>
+          <option value="3">Giá từ thấp đến cao</option>
+          <option value="4">Giá từ cao đến thấp</option>
+        </select>
+      </div>
+
+      <div class="view-option">
+        <a href="javascript:void(0)" (click)="onRefreshClick($event)">Làm mới danh sách sản phẩm</a>
+      </div>
+    </div>
+    <div class="product-wrapper">
+      <div class="category-list-wrapper">
+        <div class="category-list">
+          <a href="" (click)="onCategoryClick('', $event)">Tất cả</a>
+          <a href="" *ngFor="let category of (categoryList | async)"
+            (click)="onCategoryClick(category.id, $event)">{{category.title}}</a>
+        </div>
+      </div>
+      <div class="product-list">
+        <div class="product-item" *ngFor="let product of (productList | async)">
+          <div class="product-img">
+            <a [routerLink]="[ '/product', product.id ]" [title]="product.title">
+              <img [src]="product.imageUrl" [alt]="product.title">
+            </a>
+          </div>
+          <div class="product-info-wrapper">
+            <div class="product-info">
+              <h3 class="product-name">
+                <a [routerLink]="[ '/product', product.id ]" [title]="product.title">
+                  {{ product.title }}
+                </a>
+              </h3>
+              <div class="product-price">
+                <span class="current-price">
+                  {{ product.price | VndCurrency }}
+                </span>
+              </div>
+            </div>
+            <a href="" class="btn-add-to-cart" (click)="onAddToCartClick(product, $event)">
+              <mat-icon>add_shopping_cart</mat-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="btn-viewmore-wrapper" *ngIf="(paginationInfo | async).nextPage !== -1">
+    <a href="javascript:void(0)" (click)="onViewMore()" class="btn-viewmore">Xem thêm</a>
+  </div>
+</section>
